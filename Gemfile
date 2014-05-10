@@ -1,6 +1,20 @@
 source 'https://rubygems.org'
 
-gem 'pry'
-gem 'pry-stack_explorer'
+gem 'sinatra'
+gem 'shotgun'
+gem 'datamapper'
+gem 'redis'
 gem 'cinch'
-gem 'rspec'
+gem 'eventmachine'
+gem 'thin'
+gem 'slim'
+
+group :test do
+  gem 'rspec'
+  gem 'factory_girl'
+end
+
+group :development do
+  gem 'pry'
+  gem 'pry-stack_explorer'
+end
